@@ -8,16 +8,22 @@ load_dotenv()
 sys.path.insert(0, os.path.dirname(__file__))
 from lib_messaging import add_user_message, add_assistant_message, chat, client, model 
 
+sys.path.insert(0, os.path.dirname(__file__))
+from lib_code_grader import grade_syntax
+
 def run_prompt(test_case):
   """Merges the prompt and test case input, then returns the result"""
   prompt = f"""
     Please solve the following task:
     {test_case["task"]}
+    * Respond only with Python, JSON, or a plain Regex
+    * Do not add any comments or commentary or explanation
   """
 
   messages = []
   add_user_message(messages, prompt)
-  output = chat(messages)
+  add_assistant_message(messages, "```code")
+  output = chat(messages, stop_sequences=["```"])
   return output
 
 def grade_by_model(test_case, output):
@@ -64,7 +70,13 @@ def run_test_case(test_case):
   model_grade = grade_by_model(test_case, output)
   score = model_grade["score"]
   reasoning = model_grade["reasoning"]
+
+  syntax_score = grade_syntax(output, test_case)
   
+  print(f">>> Model grade: {score}, Syntax grade: {syntax_score}")
+  
+  score = (score + syntax_score) / 2
+
   return {
       "output": output,
       "test_case": test_case,
@@ -81,7 +93,7 @@ def run_eval(dataset):
       results.append(result)
   
   average_score = mean([result["score"] for result in results])
-  print(f"Average score: {average_score}")
+  print(f">>> Average score: {average_score}")
 
   return results
 

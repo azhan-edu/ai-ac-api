@@ -1,11 +1,14 @@
 [
   {
-    "task": "Create a Python function to extract the AWS region from an ARN (Amazon Resource Name)"
+    "task": "Extract the AWS region from an S3 bucket URL like 's3://my-bucket.us-west-2.amazonaws.com/path/to/file'",
+    "format": "regex"
   },
   {
-    "task": "Write a JSON configuration for an AWS Lambda function that defines basic environment variables and memory settings"
+    "task": "Parse an AWS CloudWatch log entry and extract the timestamp, log level, and message",
+    "format": "python"
   },
   {
-    "task": "Develop a regular expression to validate an AWS S3 bucket name (lowercase, alphanumeric, between 3-63 characters)"
+    "task": "Create a valid IAM policy JSON object that allows read-only access to a specific S3 bucket named 'company-data'",
+    "format": "json"
   }
 ]
