@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Create a Python function to extract the AWS region from an ARN (Amazon Resource Name)"
+  },
+  {
+    "task": "Write a JSON configuration for an AWS Lambda function that defines basic environment variables and memory settings"
+  },
+  {
+    "task": "Develop a regular expression to validate an AWS S3 bucket name (lowercase, alphanumeric, between 3-63 characters)"
+  }
+]
