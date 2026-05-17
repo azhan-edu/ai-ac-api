@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Create a JSON configuration object for an AWS Lambda function that processes S3 events, with environment variables for bucket name and log level",
+    "format": "json",
+    "solution_criteria": "Valid JSON with Lambda configuration including event source mapping for S3, environment variables section, and proper AWS resource structure"
+  },
+  {
+    "task": "Write a Python function that parses an AWS CloudWatch log entry and extracts the timestamp, log level, and message fields",
+    "format": "python",
+    "solution_criteria": "Function accepts a log string, returns a dictionary with timestamp, log_level, and message keys, handles common CloudWatch log formats"
+  },
+  {
+    "task": "Create a regex pattern that matches valid AWS IAM role ARNs in the format arn:aws:iam::account-id:role/role-name",
+    "format": "regex",
+    "solution_criteria": "Pattern correctly validates IAM role ARNs with 12-digit account IDs and alphanumeric role names, rejects invalid formats"
+  }
+]
