@@ -11,7 +11,10 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = []
+dependencies = [
+    "anthropic>=0.102.0",
+    "python-dotenv>=1.0.0",
+]
 
 [project.scripts]
 ai-ac-api = "ai_ac_api.__main__:main"
