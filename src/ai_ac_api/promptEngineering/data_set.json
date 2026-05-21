@@ -1,0 +1,38 @@
+[
+  {
+    "prompt_inputs": {
+      "age": "49",
+      "sex": "Male",
+      "height": "193",
+      "weight": "110",
+      "goal": "Marathon training with carbohydrate-loading for endurance performance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals from breakfast through dinner in a single day",
+      "Includes pre-training, during-training, and post-training nutrition timing",
+      "Carbohydrates comprise 60-65% of total daily calories to support endurance training",
+      "Plan is presented in compact, concise format (under 400 tokens)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carbohydrate-loading, with specific macronutrient ratios and timing around training windows"
+  },
+  {
+    "prompt_inputs": {
+      "age": "42",
+      "sex": "Female",
+      "height": "165",
+      "weight": "60",
+      "goal": "Strength and power development for weightlifting with muscle recovery between training sessions",
+      "restrictions": "Vegetarian, limited budget (meals under $3 per serving)"
+    },
+    "solution_criteria": [
+      "Meal plan spans exactly one day with clear meal timing",
+      "All meals are vegetarian and cost-effective",
+      "Includes minimum 1.6g protein per kg body weight daily from plant-based sources",
+      "Incorporates recovery nutrition between training sessions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) with dietary restrictions (vegetarian) and a limited budget, requiring protein-dense meal options and recovery nutrition between sessions"
+  }
+]

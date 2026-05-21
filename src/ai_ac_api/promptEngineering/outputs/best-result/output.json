@@ -1,0 +1,48 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Marathon Training with Carbohydrate-Loading\n\nHere is a one-day meal plan for a 49-year-old male athlete preparing for marathon training with carbohydrate-loading for endurance performance:\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (140g), Fat (85g), Carbs (480g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), honey (25g), and whole milk (240g). 2 scrambled eggs (100g) cooked in olive oil (10g).\n  * Protein: 18g, Fat: 12g, Carbs: 85g\n\n* **Mid-Morning Snack (10:00 AM):** Sports drink (500ml) with 6% carbohydrate content and granola bar (50g).\n  * Protein: 6g, Fat: 5g, Carbs: 65g\n\n* **Lunch (1:00 PM):** Grilled chicken breast (150g) with white rice (150g cooked) and steamed sweet potato (200g). Mixed green salad (100g) with olive oil dressing (15g).\n  * Protein: 45g, Fat: 10g, Carbs: 110g\n\n* **Afternoon Snack (4:00 PM):** 2 slices whole wheat bread (100g) with peanut butter (30g) and apple (150g).\n  * Protein: 12g, Fat: 10g, Carbs: 70g\n\n* **Pre-Dinner Snack (6:00 PM):** Energy drink with electrolytes (500ml) and rice cakes (40g) with jam (20g).\n  * Protein: 2g, Fat: 2g, Carbs: 65g\n\n* **Dinner (7:30 PM):** Lean ground turkey (180g) pasta with marinara sauce (200g sauce) and whole wheat pasta (100g dry weight). Garlic bread (60g).\n  * Protein: 50g, Fat: 35g, Carbs: 75g\n\n* **Evening Snack (9:30 PM):** Low-fat yogurt (200g) with granola (40g) and berries (80g).\n  * Protein: 12g, Fat: 11g, Carbs: 50g\n\nThis meal plan emphasizes high carbohydrate intake (approximately 60% of calories) to maximize muscle glycogen stores for marathon endurance, while maintaining adequate protein for muscle recovery and repair. Timing of meals and snacks supports sustained energy throughout the day and optimal fueling for training sessions.",
+    "test_case": {
+      "prompt_inputs": {
+        "age": "49",
+        "sex": "Male",
+        "height": "193",
+        "weight": "110",
+        "goal": "Marathon training with carbohydrate-loading for endurance performance",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan covers all meals from breakfast through dinner in a single day",
+        "Includes pre-training, during-training, and post-training nutrition timing",
+        "Carbohydrates comprise 60-65% of total daily calories to support endurance training",
+        "Plan is presented in compact, concise format (under 400 tokens)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carbohydrate-loading, with specific macronutrient ratios and timing around training windows"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all three mandatory requirements with precision: it provides the daily caloric total, complete macronutrient breakdown, and detailed meals with exact portions and timing. The carbohydrate loading target is accurately calculated at 60% of calories. However, it falls short on the secondary criterion regarding pre/during/post-training nutrition timing\u2014the plan provides meal timing but doesn't explicitly connect meals to training activities. Additionally, the token count slightly exceeds the 'under 400 tokens' guideline. These are secondary criterion issues that prevent a perfect score, but the mandatory requirements are fully satisfied."
+  },
+  {
+    "output": "# One-Day Meal Plan for Vegetarian Weightlifter\n\nHere is a one-day meal plan for a 42-year-old female athlete aiming for strength and power development with optimal muscle recovery:\n\n* **Calorie Target:** Approximately 2,200 calories\n* **Macronutrient Breakdown:** Protein (110g), Fat (65g), Carbs (280g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Oatmeal (80g dry) with banana (120g), peanut butter (25g), and water (240ml).\n    * Protein: 12g, Fat: 10g, Carbs: 55g\n    * Cost: ~$1.20\n\n* **Mid-Morning Snack (10:00 AM):** Greek yogurt (200g, plain) with granola (40g) and berries (80g).\n    * Protein: 18g, Fat: 6g, Carbs: 35g\n    * Cost: ~$1.50\n\n* **Lunch (1:00 PM):** Lentil and vegetable soup (400g prepared) with whole wheat bread (80g) and margarine (10g).\n    * Protein: 22g, Fat: 8g, Carbs: 65g\n    * Cost: ~$2.00\n\n* **Pre-Workout Snack (4:00 PM):** Apple (180g) with almond butter (20g).\n    * Protein: 7g, Fat: 9g, Carbs: 30g\n    * Cost: ~$0.90\n\n* **Dinner (7:00 PM):** Chickpea curry (300g prepared with coconut milk) served over rice (120g cooked) with spinach (100g).\n    * Protein: 35g, Fat: 18g, Carbs: 70g\n    * Cost: ~$2.50\n\n* **Evening Snack (9:00 PM):** Cottage cheese (150g, low-fat) with sunflower seeds (20g).\n    * Protein: 19g, Fat: 14g, Carbs: 8g\n    * Cost: ~$1.00\n\n**Total Daily Cost: ~$9.10 (well under budget at $1.30 per serving)**\n\nThis meal plan prioritizes high-quality plant-based proteins (legumes, dairy, nuts) with adequate carbohydrates for strength training and recovery, while maintaining an economical budget.",
+    "test_case": {
+      "prompt_inputs": {
+        "age": "42",
+        "sex": "Female",
+        "height": "165",
+        "weight": "60",
+        "goal": "Strength and power development for weightlifting with muscle recovery between training sessions",
+        "restrictions": "Vegetarian, limited budget (meals under $3 per serving)"
+      },
+      "solution_criteria": [
+        "Meal plan spans exactly one day with clear meal timing",
+        "All meals are vegetarian and cost-effective",
+        "Includes minimum 1.6g protein per kg body weight daily from plant-based sources",
+        "Incorporates recovery nutrition between training sessions"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a strength/power athlete (weightlifter) with dietary restrictions (vegetarian) and a limited budget, requiring protein-dense meal options and recovery nutrition between sessions"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements with clear meal timing spanning one day, exact portions and foods listed, daily caloric and macronutrient totals provided, vegetarian compliance, and cost-effectiveness. All secondary criteria are met: vegetarian meals with plant-based proteins (legumes, Greek yogurt, cottage cheese, nuts), budget compliance at $1.30/serving, and protein intake of 113g exceeds the 96g minimum (1.6g \u00d7 60kg). The meal plan includes recovery-focused nutrition with distributed protein intake and carbohydrates. Minor weaknesses exist in recovery timing optimization and strategic nutrient timing around workouts, but these are not required by the stated criteria. The solution is compact, concise, and directly addresses the athlete's goals."
+  }
+]

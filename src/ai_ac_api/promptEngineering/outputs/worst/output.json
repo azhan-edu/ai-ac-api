@@ -1,0 +1,48 @@
+[
+  {
+    "output": "# One-Day Marathon Training Meal Plan\n**For: 49-year-old Male Athlete | 193 cm | 110 kg**\n\n---\n\n## BREAKFAST (7:00 AM)\n**Carb-Loading Oatmeal Bowl**\n- 1.5 cups cooked oatmeal\n- 1 medium banana (sliced)\n- \u00bc cup raisins\n- 1 tbsp honey\n- 1 tbsp almond butter\n- \u00bd cup low-fat milk\n- Pinch of cinnamon\n\n**Nutritional Profile:** ~650 calories | 115g carbs | 16g protein | 10g fat\n\n---\n\n## MID-MORNING SNACK (10:00 AM)\n**Pre-Run Fuel**\n- 2 slices whole wheat toast\n- 1 tbsp jam\n- 1 medium orange\n\n**Nutritional Profile:** ~280 calories | 58g carbs | 7g protein | 2g fat\n\n---\n\n## LUNCH (1:00 PM)\n**Pasta Power Bowl**\n- 2 cups cooked pasta (whole wheat)\n- 150g grilled chicken breast\n- 2 cups mixed vegetables (zucchini, bell peppers, carrots)\n- 2 tbsp olive oil-based marinara sauce\n- Fresh basil and parmesan\n\n**Nutritional Profile:** ~850 calories | 110g carbs | 42g protein | 12g fat\n\n---\n\n## AFTERNOON SNACK (4:00 PM)\n**Energy Boost**\n- Sports drink or electrolyte beverage (500ml)\n- 1 energy bar or granola bar\n- 1 apple\n\n**Nutritional Profile:** ~350 calories | 85g carbs | 6g protein | 3g fat\n\n---\n\n## DINNER (7:00 PM)\n**Recovery Meal**\n- 200g lean salmon\n- 1.5 cups brown rice\n- 2 cups steamed broccoli\n- 1 tbsp olive oil for cooking\n- Lemon seasoning\n\n**Nutritional Profile:** ~750 calories | 85g carbs | 50g protein | 16g fat\n\n---\n\n## EVENING RECOVERY (9:00 PM)\n**Refueling Drink**\n- Greek yogurt smoothie:\n  - 200g Greek yogurt (0% fat)\n  - 1 cup berries\n  - \u00bd banana\n  - 1 tbsp honey\n  - \u00bd cup milk\n\n**Nutritional Profile:** ~280 calories | 52g carbs | 20g protein | 1g fat\n\n---\n\n## **DAILY TOTALS**\n| Metric | Amount |\n|--------|--------|\n| **Total Calories** | ~3,160 |\n| **Carbohydrates** | 505g (64% of calories) |\n| **Protein** | 141g (18% of calories) |\n| **Fat** | 44g (12% of calories) |\n| **Fluid** | 2.5-3L water + electrolytes |\n\n---\n\n## KEY RECOMMENDATIONS\n\u2713 **Hydration:** Drink 500-750ml water every 2 hours + electrolyte drink during/after runs\n\u2713 **Timing:** Eat complex carbs 2-3 hours before long runs\n\u2713 **Recovery:** Consume protein + carbs within 30-60 minutes post-training\n\u2713 **Adjust portions:** Increase calories on heavy training days; reduce on rest days\n\u2713 **Monitor:** Adjust based on training intensity and body response",
+    "test_case": {
+      "prompt_inputs": {
+        "age": "49",
+        "sex": "Male",
+        "height": "193",
+        "weight": "110",
+        "goal": "Marathon training with carbohydrate-loading for endurance performance",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan covers all meals from breakfast through dinner in a single day",
+        "Includes pre-training, during-training, and post-training nutrition timing",
+        "Carbohydrates comprise 60-65% of total daily calories to support endurance training",
+        "Plan is presented in compact, concise format (under 400 tokens)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carbohydrate-loading, with specific macronutrient ratios and timing around training windows"
+    },
+    "score": 5,
+    "reasoning": "The solution demonstrates strong nutritional science and comprehensive meal planning. It successfully covers all meals, achieves the target 64% carbohydrate ratio, and includes thoughtful recovery nutrition. However, it critically fails the 'compact, concise format (under 400 tokens)' requirement by being roughly 2x the specified length. While the content quality is high, the explicit criterion for conciseness is a mandatory requirement that has been violated. The plan also lacks clear integration of pre/during/post-training timing relative to an actual training schedule, which is a secondary criterion. These issues prevent a higher score despite strong nutritional content."
+  },
+  {
+    "output": "# One-Day Meal Plan for Vegetarian Weightlifter\n\n**Athlete Profile:** 42-year-old female, 165cm, 60kg | Goal: Strength/Power Development | Budget: <$3/serving\n\n---\n\n## Daily Nutrition Targets\n- **Calories:** ~2,200 kcal\n- **Protein:** 120-130g (2g per kg body weight for muscle recovery)\n- **Carbs:** 250-270g (strength training fuel)\n- **Fat:** 55-60g\n\n---\n\n## BREAKFAST (7:00 AM)\n### Oatmeal Power Bowl\n- 1 cup cooked oatmeal (50g)\n- 2 tbsp peanut butter\n- 1 medium banana\n- 1 tbsp ground flaxseed\n- Pinch of cinnamon\n\n**Nutrition:** 480 cal | 18g protein | 58g carbs | 15g fat | *Cost: $1.10*\n\n---\n\n## MID-MORNING SNACK (10:00 AM)\n### Greek Yogurt & Lentils\n- 150g plain Greek yogurt (0%)\n- \u00bd cup cooked red lentils\n- 1 tbsp honey\n- Handful of walnuts (15g)\n\n**Nutrition:** 280 cal | 20g protein | 28g carbs | 8g fat | *Cost: $1.20*\n\n---\n\n## LUNCH (12:30 PM)\n### Chickpea & Quinoa Power Bowl\n- \u00be cup cooked quinoa\n- \u00be cup canned chickpeas (rinsed)\n- 1 cup spinach\n- \u00bd cup diced bell pepper\n- 2 tbsp tahini dressing\n- Lemon juice & salt\n\n**Nutrition:** 520 cal | 18g protein | 62g carbs | 18g fat | *Cost: $1.50*\n\n---\n\n## PRE-WORKOUT SNACK (3:00 PM)\n### Quick Energy Combo\n- 1 medium apple\n- 30g almonds\n- 1 oz cheddar cheese\n\n**Nutrition:** 320 cal | 12g protein | 28g carbs | 18g fat | *Cost: $1.35*\n\n---\n\n## DINNER (6:30 PM - Post-Workout)\n### Tofu Stir-Fry with Brown Rice\n- 200g firm tofu (pressed & cubed)\n- 1 cup cooked brown rice\n- 2 cups mixed vegetables (broccoli, carrots, snap peas)\n- 1.5 tbsp soy sauce\n- 1 tsp sesame oil\n- \u00bd tsp ginger & garlic\n\n**Nutrition:** 480 cal | 22g protein | 65g carbs | 12g fat | *Cost: $1.80*\n\n---\n\n## EVENING SNACK (8:30 PM)\n### Recovery Smoothie\n- 1 cup unsweetened milk (or plant-based)\n- 1 scoop plant-based protein powder\n- \u00bd frozen banana\n- 1 tbsp almond butter\n\n**Nutrition:** 240 cal | 28g protein | 18g carbs | 7g fat | *Cost: $1.05*\n\n---\n\n## DAILY TOTALS\n| Metric | Target | Achieved |\n|--------|--------|----------|\n| **Calories** | 2,200 | 2,320 |\n| **Protein** | 120-130g | 118g |\n| **Carbs** | 250-270g | 259g |\n| **Fat** | 55-60g | 78g* |\n| **Cost** | <$18 | **$8.00** |\n\n*Note: Fat slightly elevated due to protein sources; adjust by reducing nuts if needed.\n\n---\n\n## Budget Optimization Tips\n\u2713 Buy dried lentils & chickpeas in bulk (much cheaper than canned)\n\u2713 Purchase seasonal vegetables at discount\n\u2713 Buy plant-based protein powder in bulk\n\u2713 Use store-brand Greek yogurt\n\u2713 Oats",
+    "test_case": {
+      "prompt_inputs": {
+        "age": "42",
+        "sex": "Female",
+        "height": "165",
+        "weight": "60",
+        "goal": "Strength and power development for weightlifting with muscle recovery between training sessions",
+        "restrictions": "Vegetarian, limited budget (meals under $3 per serving)"
+      },
+      "solution_criteria": [
+        "Meal plan spans exactly one day with clear meal timing",
+        "All meals are vegetarian and cost-effective",
+        "Includes minimum 1.6g protein per kg body weight daily from plant-based sources",
+        "Incorporates recovery nutrition between training sessions"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a strength/power athlete (weightlifter) with dietary restrictions (vegetarian) and a limited budget, requiring protein-dense meal options and recovery nutrition between sessions"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully meets all four mandatory criteria: (1) spans exactly one day with clear meal timing, (2) all meals are vegetarian and cost-effective at $8.00 total, (3) achieves 118g protein from plant-based sources, exceeding the 96g minimum (1.6g \u00d7 60kg), and (4) incorporates recovery nutrition with a post-workout dinner and evening protein smoothie. The meal plan is well-structured, practical, and includes helpful budget optimization tips. While the fat content exceeds targets and the protein is slightly below the stated 120-130g goal, these are minor secondary issues that don't violate the mandatory requirements. The solution is compact, concise, and directly addresses the athlete's needs for strength/power development with appropriate macronutrient distribution."
+  }
+]
