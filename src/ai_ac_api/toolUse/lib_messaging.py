@@ -39,6 +39,37 @@ def chat(messages, system=None, temperature=1.0, stop_sequences=[], tools=None):
     message = client.messages.create(**params)
     return message
 
+def chat_stream(
+    messages,
+    system=None,
+    temperature=1.0,
+    stop_sequences=[],
+    tools=None,
+    tool_choice=None,
+    betas=[],
+):
+    params = {
+        "model": model,
+        "max_tokens": 1000,
+        "messages": messages,
+        "temperature": temperature,
+        "stop_sequences": stop_sequences,
+    }
+
+    if tool_choice:
+        params["tool_choice"] = tool_choice
+
+    if tools:
+        params["tools"] = tools
+
+    if system:
+        params["system"] = system
+
+    if betas:
+        params["betas"] = betas
+
+    return client.beta.messages.stream(**params)
+
 def text_from_message(message):
     return "\n".join([
         block.text for block in message.content if block.type == "text"])
