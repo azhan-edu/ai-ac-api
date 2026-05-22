@@ -1,32 +1,44 @@
 # Create an API client
+
+from anthropic.types import Message
 from anthropic import Anthropic
 client = Anthropic()
 model = "claude-haiku-4-5-20251001"
 
-def add_user_message(messages, text):
-    user_message = {"role": "user", "content": text}
+def add_user_message(messages, message):
+    user_message = {
+        "role": "user",
+        "content": message.content if isinstance(message, Message) else message,
+    }
     messages.append(user_message)
 
-def add_assistant_message(messages, text):
-    assistant_message = {"role": "assistant", "content": text}
+
+def add_assistant_message(messages, message):
+    assistant_message = {
+        "role": "assistant",
+        "content": message.content if isinstance(message, Message) else message,
+    }
     messages.append(assistant_message)
 
-def chat(messages, system_prompt=None, temperature=1.0, stop_sequences=None):
+
+def chat(messages, system=None, temperature=1.0, stop_sequences=[], tools=None):
     params = {
         "model": model,
         "max_tokens": 1000,
         "messages": messages,
-        "temperature": temperature
+        "temperature": temperature,
+        "stop_sequences": stop_sequences,
     }
 
-    if system_prompt:
-        params["system"] = system_prompt
+    if tools:
+        params["tools"] = tools
 
-    if stop_sequences:
-        params["stop_sequences"] = stop_sequences
-
-    print("Request parameters:", params)
+    if system:
+        params["system"] = system
 
     message = client.messages.create(**params)
+    return message
 
-    return message.content[0].text
+def text_from_message(message):
+    return "\n".join([
+        block.text for block in message.content if block.type == "text"])
